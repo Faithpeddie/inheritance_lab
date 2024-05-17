@@ -8,7 +8,7 @@ public abstract class Media {
         this.price = price;
     }
 
-    public void setTitle(){
+    public void setTitle(String title){
         this.title = title;
     }
 
@@ -16,7 +16,7 @@ public abstract class Media {
         return this.title;
     }
 
-    public void setPrice(){
+    public void setPrice(double price){
         this.price = price;
     }
 

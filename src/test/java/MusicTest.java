@@ -13,6 +13,28 @@ public class MusicTest {
     }
 
     @Test
+    public void canSetTitle(){
+        this.music.setTitle("Run This Town");
+        assertThat(music.getTitle()).isEqualTo("Run This Town");
+    }
+
+    @Test
+    public void canGetTitle(){
+        assertThat(music.getTitle()).isEqualTo("Saturn");
+    }
+
+    @Test
+    public void canSetPrice(){
+        this.music.setPrice(4.00);
+        assertThat(music.getPrice()).isEqualTo(4.00);
+    }
+
+    @Test
+    public void canGetPrice(){
+        assertThat(music.getPrice()).isEqualTo(3.00);
+    }
+
+    @Test
     public void canSetArtist(){
         this.music.setArtist("Pop Smoke");
         assertThat(music.getArtist()).isEqualTo("Pop Smoke");

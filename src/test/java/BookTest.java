@@ -13,6 +13,28 @@ public class BookTest {
     }
 
     @Test
+    public void canSetTitle(){
+        this.book.setTitle("Divergent");
+        assertThat(book.getTitle()).isEqualTo("Divergent");
+    }
+
+    @Test
+    public void canGetTitle(){
+        assertThat(book.getTitle()).isEqualTo("Harry Potter");
+    }
+
+    @Test
+    public void canSetPrice(){
+        this.book.setPrice(7.50);
+        assertThat(book.getPrice()).isEqualTo(7.50);
+    }
+
+    @Test
+    public void canGetPrice(){
+        assertThat(book.getPrice()).isEqualTo(8.00);
+    }
+
+    @Test
     public void canSetAuthor(){
         this.book.setAuthor("Jaqueline Wilson");
         assertThat(book.getAuthor()).isEqualTo("Jaqueline Wilson");
